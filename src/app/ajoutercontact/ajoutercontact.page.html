@@ -1,0 +1,41 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>ajoutercontact</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <ion-list lines="full" class="ion-no-margin ion-no-padding">
+      <ion-item>
+        <ion-label position="stacked">nom <ion-text color="danger">*</ion-text></ion-label>
+        <ion-input type="text" placeholder="Enter Name Here" [(ngModel)]="nom"></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label position="stacked">Prenom <ion-text color="danger">*</ion-text></ion-label>
+        <ion-input type="text" placeholder="Enter prenom Here" [(ngModel)]="prenom"></ion-input>
+      </ion-item>
+      
+      <ion-item>
+        <ion-label position="stacked">Adresse <ion-text color="danger">*</ion-text></ion-label>
+        <ion-input type="text" placeholder="Enter Adresse Here" [(ngModel)]="adresse"></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label position="stacked">Email <ion-text color="danger">*</ion-text></ion-label>
+        <ion-input type="text" placeholder="Enter Email Here" [(ngModel)]="email"></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label position="stacked">Telephone <ion-text color="danger">*</ion-text></ion-label>
+        <ion-input type="text" placeholder="Enter Telephone Here" [(ngModel)]="telephone"></ion-input>
+      </ion-item>
+    </ion-list>
+
+    <ion-button expand="" type="submit" class="ion-no-margin" (click)="insertRow()">Ajouter Contact</ion-button>
+    <ion-item>
+      <ion-label >{{testmessage}}</ion-label>
+    </ion-item>
+   
+
+</ion-content>

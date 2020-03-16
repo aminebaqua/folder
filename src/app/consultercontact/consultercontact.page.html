@@ -1,0 +1,43 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>consultercontact</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-item>
+    <ion-label position="stacked">code <ion-text color="danger">*</ion-text></ion-label>
+    <ion-input type="text" placeholder="Enter Code" [(ngModel)]="code"></ion-input>
+    <ion-button  size="small"  (click)="getOneRow()">search Contact</ion-button>
+  </ion-item>
+  
+  <ion-list lines="full" class="ion-no-margin ion-no-padding">
+    <ion-item>
+      <ion-label position="stacked">nom </ion-label>
+      <ion-input type="text" [(ngModel)]="nom"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="stacked">Prenom</ion-label>
+      <ion-input type="text"  [(ngModel)]="prenom"></ion-input>
+    </ion-item>
+    
+    <ion-item>
+      <ion-label position="stacked">Adresse </ion-label>
+      <ion-input type="text" [(ngModel)]="adresse"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="stacked">Email</ion-label>
+      <ion-input type="text"[(ngModel)]="email"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="stacked">Telephone</ion-label>
+      <ion-input type="text" [(ngModel)]="telephone"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label >{{testmessage}}</ion-label>
+    </ion-item>
+  </ion-list>
+</ion-content>
